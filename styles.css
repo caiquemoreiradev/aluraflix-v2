@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #141414;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header ======== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo img {
+    width: 80px;
+    margin: 1rem;
+
+    border-radius: 50%;
+}
+
+div.right h2 {
+    font-weight: normal;
+}
+
+div.right h2 strong {
+    background: #07ED6F;
+    padding: 3px;
+}
+
+/* Highlights ======== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 2rem;
+}
+
+main h3 {
+    font-size: 16px;
+}
+
+div.main__content {
+    display: flex;
+}
+
+section.highlight__player {
+    padding: 2rem;
+    background: #039E4D;
+
+    border-radius: 10px;
+
+    width: 800px;
+    margin-right: 5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+section.highlight__player div.player__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.highlight__player div.infos {
+    margin: 40px 4rem;
+}
+
+section.highlight__player div.infos div.stats {
+    margin: 1.2rem;
+}
+
+main section.highlight__player img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 2rem
+}
+
+main section div.best__player,
+main section div.play__more,
+main section div.worst__player {
+    background: #fff;
+    color: #141414;
+    
+    height: 150px;
+    width: 450px;
+
+    margin: 1rem;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+main section div.best__player img,
+main section div.play__more img,
+main section div.worst__player img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    margin: 1.5rem;
+    border: 3px solid #07ED6F;
+}
+
+/* Table ======== */
+
+#data-table {
+    width: 85%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+    margin-top: 5rem;
+}
+
+table th {
+    background: #fff;
+
+    font-weight: normal;
+    padding: 1rem 2rem;
+
+    text-align: left;
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+table td {
+    background: #fff;
+    color: #141414;
+    padding: 0.3rem 2rem;
+}
+
+table td img {
+    width: 80px;
+    border-radius: 40px;
+}
+
+table button {
+    border: none;
+    padding: 0.6rem;
+
+    color: #fff;
+    border-radius: 10px;
+}
+
+table button.but_victory {
+    background: #039E4D;
+}
+
+table button.but_lost {
+    background: #F50B1B;
+}
+
+table button.but_tie {
+    background: #FFE618;
+}
+
+table button.but_victory:hover {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #039E4D;
+    color: #039E4D;
+}
+
+table button.but_lost:hover {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #F50B1B;
+    color: #F50B1B;
+}
+
+table button.but_tie:hover {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #FFE618;
+    color: #FFE618;
+}
