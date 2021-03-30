@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:  #141414;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header ======== */
+
+body header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #141414;
+    padding: 1.8rem 2rem;
+}
+
+body header img {
+    width: 200px;
+}
+
+body header img:hover {
+    cursor: pointer;
+}
+
+body header h2 {
+    font-weight: normal;
+    color: #fff;
+}
+
+body header h2 strong {
+    padding: 2px;
+    background: #DB202C;
+}
+
+body header nav ul {
+    display: flex;
+    color: #fff;
+
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #DB202C;
+
+    transform: scale(1.1);
+}
+
+header nav ul li img {
+    width: 30px;
+}
+
+/* Container Content ======== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.models {
+    display: none;
+}
+
+section {
+    padding: 1rem;
+}
+
+section h2 {
+    padding: 1rem;
+
+    font-size: 35px;
+}
+
+section.tvShows,
+section.action,
+section.animation,
+section.comedy
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+section div.content {
+    width: 385px;
+    height: 310px;
+    padding: 1rem;
+    transform: all 0.2s;
+}
+
+section div.content:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+section div.content img {
+    width: 350px;
+    height: 200px;
+
+    border-radius: 10px;
+}
+
+section div.content h2{
+    font-weight: normal;
+
+    font-size: 20px;
+    padding: 0.5rem;
+}
+
+section div.content h4{
+    font-weight: normal;
+
+    font-size: 15px;
+    padding: 0 0.5rem;
+}
+
+/* Add new Content ======== */
+
+section.addContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.form {
+    padding: 0;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+    height: 500px;
+    width: 1200px;
+
+    display: flex;
+    color: #141414;
+}
+
+section.form h2 {
+    font-size: 20px;
+    padding: 2rem;
+}
+
+section.form div.images__content {
+    background-image: url('https://natashaatlas.com/wp-content/uploads/2019/01/NETFLIX-2018.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+
+    width: 50%;
+}
+
+/* Inputs ======== */
+
+section.form {
+    display: flex;
+}
+
+div.inputs__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+div.inputs__content h2 strong {
+    color: #DB202C;
+}
+
+div.inputs__content div.inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div.inputs__content div.inputs div.input__span {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+}
+
+div.inputs div.input__span span {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+div.inputs div.input__span input {
+    padding: 0.5rem 1rem;
+    border: none;
+
+    background: #ddd;
+}
+
+div.inputs select {
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+div.inputs select:hover {
+    cursor: pointer;
+}
+
+div.inputs button {
+    padding: 0.8rem;
+    border: none;
+    margin: 3rem 1.3rem;
+
+    align-self: center;
+    font-weight: bold;
+
+    background: #DB202C;
+    color: #fff;
+    border-radius: 10px;
+}
+
+div.inputs button:hover {
+    cursor: pointer;
+
+    border: 1px solid #DB202C;
+    background: #fff;
+    color: #DB202C;
+}
+
+section.hide {
+    display: none;
+}
